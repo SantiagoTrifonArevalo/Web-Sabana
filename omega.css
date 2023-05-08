@@ -1,6 +1,7 @@
 body {
-    background-color: orange; /* For browsers that do not support gradients */
-  background-image: linear-gradient(orange 15%, yellow, brown); 
+    background-color: orange;
+    /* For browsers that do not support gradients */
+    background-image: linear-gradient(#BD5102 5%, #EA8500 11%, #25060B);
     margin: 0;
     padding: 0;
     font-family: 'EB Garamond', serif;
@@ -11,55 +12,71 @@ body {
     background-color: #793C06;
 }
 
+#linea {
+    background-color: black;
+    width: 150%;
+    height: 12px;
+    position: absolute;
+    top: 145px;
+    z-index: -1;
+}
+
 a {
-    text-decoration: none;    
- }
+    text-decoration: dashed;
+}
 
 nav#page {
-    margin-top: 44px;
-    margin-bottom: 15px;;
+    margin-top: -0.4px;
     height: auto;
-    position: relative;
-    overflow: hidden;
     width: 670px;
+    padding-left: 50px;
     display: flex;
-    justify-content: center;
-    justify-content: space-evenly;
+    justify-content: left;
 }
-.topNaviagationLink>a{
-color: black;
-border-bottom: dashed 1px;
+
+.topNaviagationLink>a {
+    display: block;
+    color: brown;
+    border-bottom: dashed 1px;
+    width: fit-content;
+    height: 25px;
 }
+
 .topNaviagationLink>a:hover {
     color: white;
     background-color: #160306;
+    width: 70px;
+    height: 40px;
+    border-bottom: none;
 }
-    
+
 
 div.topNaviagationLink {
+
     text-align: center;
-    position: relative;
-    margin-top: 30px;
+    padding-top: 30px;
     font-size: 16px;
     margin-left: -10px;
     width: 121px;
     height: 35px;
     line-height: 35px;
     float: left;
-    color: #160306; 
+    color: black;
 }
+
 a:-webkit-any-link {
     cursor: pointer;
 }
 
 
 section.picture {
-    position:static;
+    position: static;
     width: 650px;
     height: 325px;
     top: 10px;
     background-image: url(https://proyecto-sabana.vercel.app/assets/img/mainImage.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
     border: 10px solid black;
 }
 
@@ -80,13 +97,16 @@ section.picture {
 }
 
 .contentBox {
+    background-image:linear-gradient(
+        #FED8B1 5%, white 15%);
     margin-top: 10px;
     width: 650px;
-    color:black;
-    background-color:white;
-    border:solid #160306 10px;
+    color: black;
+    background-color: white;
+    border: solid #160306 10px;
     padding-bottom: 20px;
 }
+
 .iguaal {
     color: brown;
 }
@@ -103,8 +123,8 @@ p.contentBox.innerBox {
     position: relative;
     width: 650px;
     top: 10px;
-    background-image: 
-    background-color #FFFFFF;
+    background-image:
+        background-color #FFFFFF;
     background-repeat: repeat-x;
 }
 
